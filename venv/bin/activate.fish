@@ -32,7 +32,11 @@ end
 # unset irrelavent variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/Users/fernandarodriguez/Desktop/iluminemos-5b2c3dc955d31a7a61e144c614b54c487e4e9269/venv"
+=======
+set -gx VIRTUAL_ENV "/Users/fernandarodriguez/Desktop/iluminemosos_de_azul/venv"
+>>>>>>> ef20a4b5096db7e2600025a10f58864ac03b3516
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
