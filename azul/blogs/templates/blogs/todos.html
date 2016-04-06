@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+{%load static%}
+
+{%block content%}
+	<h1>Todos los posts:</h1>
+
+	{% for blog in blogs %}
+	<a href="{{blog.get_absolute_url}}">
+		<h2>{{blog.titulo}}</h2>
+	</a>
+
+		<p>{{blog.fecha}}</p>
+		<p>{{blog.cuerpo}}</p>
+	{%endfor%}
+
+	<h2>Nuevo blog:</h2>
+	<form action="." method="blog">
+		{{form.as_p}}
+		{% csrf_token %}
+		<p><input type="submit" value="Enviar"></p>
+	</form>
+
+{%endblock content%}
